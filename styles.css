@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent; /* Set background color to transparent */
+    /* backdrop-filter: blur(10px); */
+    /* -webkit-backdrop-filter: blur(00px);  */
+    z-index: 1; /* Ensure navbar is on top of other content */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.h{
+    margin-top: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.logo {
+    width: auto;
+    height: 100px;
+}
+
+.button {
+    background-color: #e50914;
+    border: none;
+    color: white;
+    padding: 8px 20px; 
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.header {
+    position: relative;
+    background-image: url('https://repository-images.githubusercontent.com/299409710/b42f7780-0fe1-11eb-8460-e459acd20fb4');
+    color: white;
+    padding: 270px;
+    text-align: center;
+    z-index: 0; /* Ensure header is behind the navbar */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.header p{
+    font-size: 20px;
+}
+.shows-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.show {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10px;
+    width: 350px;
+}
+
+.show img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.show h2 {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.button {
+    background-color: #e50914;
+    border: none;
+    color: white;
+    padding: 5px 15px; 
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block; 
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 17px; 
+    margin-top: 1px;
+}
+
+
+
+.features {
+    display: flex;
+    flex-direction: column;
+    background-color: black; 
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid whit
+}
+
+.feature-text {
+    flex: 1;
+    padding: 70px;
+    color: white; 
+    font-size: medium;
+}
+
+
+.feature h3 {
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.feature-text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.feature img {
+    max-width: 50%;
+    margin-right: 20px;
+    order: 1; 
+}
+
+.feature:nth-child(even) .feature-text {
+    text-align: right;
+    order: 2;
+}
+
+.feature:nth-child(even) img {
+    margin-right: 0;
+    margin-left: 20px;
+    order: 1;
+}
+
+body {
+    background-color: black;
+    display: ;
+}
+
+.faq-heading {
+    margin: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.faq {
+    color: white;
+    padding: 30px;
+}
+
+.question-block {
+    position: relative;
+    margin-bottom: -44px;
+    background-color: rgb(48 48 48);
+    padding: 26px;
+    border-radius: 5px;
+}
+
+
+.question {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.answer {
+    display: none;
+    margin-top: 10px;
+    background-color: rgb(48, 48, 48);
+    padding: 37px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.question.active {
+    color: #e50914;
+}
+
+.question.active + .answer {
+    display: block;
+}
+
+.plus-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    padding-right: 40px;
+    z-index: 1;
+}
+
+.contact {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.contact h1 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+.contact p {
+    margin: 20px 0;
+    color: rgb(237, 235, 235);
+}
+
+.contact a {
+    color: #e50914;
+}
+
+.newsletter {
+    background-color: black; 
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.newsletter h1 {
+    margin: 0;
+    color: white; 
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.newsletter label {
+    margin: 10px 0;
+    color: white;
+}
+
+.newsletter input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.newsletter button[type="submit"] {
+    background-color: #e50914;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter {
+    border-top: 1px solid rgb(53, 53, 53);
+}
+
+footer {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
